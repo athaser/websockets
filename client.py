@@ -5,7 +5,7 @@ async def delete_one_error_code():
     uri = "ws://localhost:8765"
     async with websockets.connect(uri) as websocket:
         
-        error_code_delete_one = ("203620336")
+        error_code_delete_one = ("1")
         await websocket.send(error_code_delete_one)
         print(f"> {error_code_delete_one}")
 
